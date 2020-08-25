@@ -1,9 +1,21 @@
 var inquirer = require("inquirer");
 
 var fs = require("fs");
-var generateMarkdown = require("./generateMarkdown");
+var generateMarkdown = require("./assets/generateMarkdown");
 
 inquirer.prompt([
+    {
+        type:    "input",
+        message: "What is your Github user name?",
+        name:    "username"
+    
+    },
+    {
+        type:    "input",
+        message: "What is your email address?",
+        name:    "email"
+    
+    },
     {
         type:    "input",
         message: "What is the name of your project?",
@@ -11,7 +23,7 @@ inquirer.prompt([
     },
     {
         type:    "input",
-        message: "Describe your project!",
+        message: "Please write a short description of your project.",
         name:    "Description"
     },
     {
@@ -26,17 +38,17 @@ inquirer.prompt([
     },
     {
        type:     "input",
-       message:  "List additional contributors to the project.",
+       message:  "What does the user need to know about contributing to the project?",
        name:     "Contributors"
     },
     {
         type:    "input",
-        message: "How is your project tested?",
-        name:    "Test"
+        message: "What command should be run to run tests?",
+        name:    "Tests"
     },
     {
         type:    "list",
-        message: "Select your license",
+        message: "Select your license.",
         name:    "License",
         choices: ["MIT", "GVL-GPL 3.0","APACHE 2.0","BSD 3","NONE"]
     },
@@ -44,18 +56,6 @@ inquirer.prompt([
         type:    "input",
         message: "Contact me if you have questions.",
         name:    "Questions"
-
-    },
-    {
-        type:    "input",
-        message: "What is your Github user name?",
-        name:    "username"
-
-    },
-    {
-        type:    "input",
-        message: "What is your email?",
-        name:    "email"
 
     },
 
