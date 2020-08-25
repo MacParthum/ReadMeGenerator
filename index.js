@@ -1,5 +1,8 @@
 var inquirer = require("inquirer");
 
+var fs = require("fs");
+var generateMarkdown = require("./generateMarkdown");
+
 inquirer.prompt([
     {
         type:    "input",
@@ -35,13 +38,7 @@ inquirer.prompt([
         type:    "list",
         message: "Select your license",
         name:    "License",
-        licenseChoice: [
-                 "MIT",
-                 "GVL-GPL 3.0",
-                 "APACHE 2.0",
-                 "BSD 3",
-                 "NONE"
-        ]
+        choices: ["MIT", "GVL-GPL 3.0","APACHE 2.0","BSD 3","NONE"]
     },
     {
         type:    "input",
@@ -51,25 +48,24 @@ inquirer.prompt([
     },
     {
         type:    "input",
-        message: "Github username?",
-        name:    "Username"
+        message: "What is your Github user name?",
+        name:    "username"
+
     },
     {
         type:    "input",
-        message: "e-mail?",
-        type:    "e-mail"
+        message: "What is your email?",
+        name:    "email"
 
-    }
+    },
 
 
 ]).then(answers => {
     console.log(answers);
 
-    let readme = "";
+let readme = generateMarkdown(answers)
 
     fs.writeFile("README.md", readme, err => {
-        if (err) {
-            return console.log(err);
-        }
+
     })
-});
+})
