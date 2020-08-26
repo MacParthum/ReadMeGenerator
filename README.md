@@ -11,6 +11,11 @@ It asks several questions and includes a license badge when you select what lice
 
 [Sample README.md](assets/sampleREADME.md)
 
+## YouTube Demo
+
+https://www.youtube.com/watch?v=rAbHrIhFHxs&feature=youtu.be
+
+
 ## Table of Contents
 
    *[Installation](#Installation)
@@ -41,5 +46,9 @@ MIT
 ## Tests
 
 npm test
+
+## Screen Shot
+
+![Screen Shot](assets/screenshot.png)
 
  
