@@ -1,46 +1,42 @@
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-    
- x
+   
+## Title 
 
-  ## Description
+README.md Generator
 
-    x
-    
-   ## Table of Contents
+## Description
+
+A cool readme generator.
+
+## Table of Contents
 
    *[Installation](#Installation)
    *[Usage](#Usage)
    *[License](#License)
    *[Contributors](#Contributors)
    *[Tests](#Tests)
-   *[Questions](#Questions)
 
 
-    ## Installation
 
-    x
+## Installation
 
-    ## Usage
+npm i
 
-    x
+## Usage
 
-    ## License
+A little bit of coding.
 
-    MIT
+## License
+
+MIT
     
 
-    ## Contributors
+## Contributors
 
-    x
+Node.js
 
-    ## Tests
+## Tests
 
-    x
+npm test
 
-
- ## Questions
-    Please contact me at x if you have any questions.
-
-    Please visit my github account [undefined](https://github.com/undefined/)
-    
-    
+ 

@@ -1,12 +1,17 @@
-var inquirer = require("inquirer");
+const inquirer = require("inquirer");
 
-var fs = require("fs");
-var generateMarkdown = require("./assets/generateMarkdown");
+let fs = require("fs");
+let generateMarkdown = require("./assets/generateMarkdown");
 
 inquirer.prompt([
     {
         type:    "input",
-        message: "What is your Github user name?",
+        message: "What is your project's name?",
+        name:     "Title"
+    },
+    {
+        type:    "input",
+        message: "What is your GitHub user name?",
         name:    "username"
     
     },
@@ -18,22 +23,17 @@ inquirer.prompt([
     },
     {
         type:    "input",
-        message: "What is the name of your project?",
-        name:     "Title"
-    },
-    {
-        type:    "input",
         message: "Please write a short description of your project.",
         name:    "Description"
     },
     {
         type:    "input",
-        message: "What are the installation requirements?",
+        message: "What command should be run to install dependancies?",  
         name:    "Installation"
     },
     {
         type:    "input",
-        message: "Provide user instructions here!",
+        message: "What does the user need to know about using the repo?",
         name:    "Usage"
     },
     {
@@ -48,15 +48,9 @@ inquirer.prompt([
     },
     {
         type:    "list",
-        message: "Select your license.",
+        message: "What kind of license should your project have?",
         name:    "License",
         choices: ["MIT", "APACHE", "GPL", "BSD", "None"]
-    },
-    {
-        type:    "input",
-        message: "Contact me if you have questions.",
-        name:    "Questions"
-
     },
 
 
