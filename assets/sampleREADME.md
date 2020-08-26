@@ -9,7 +9,6 @@ README.md Generator
 A README.md generator that dynamacally creates README files in markdown language for use on any project your working on.
 It asks several questions and includes a license badge when you select what license you would like to use for your project.
 
-[Sample README.md](assets/sampleREADME.md)
 
 ## Table of Contents
 
@@ -27,7 +26,7 @@ npm i
 
 ## Usage
 
-A little bit of coding in Node.js required :-)
+A little bit of coding.
 
 ## License
 
@@ -36,7 +35,7 @@ MIT
 
 ## Contributors
 
-
+Node.js
 
 ## Tests
 
