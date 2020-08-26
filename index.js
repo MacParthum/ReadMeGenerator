@@ -50,7 +50,7 @@ inquirer.prompt([
         type:    "list",
         message: "Select your license.",
         name:    "License",
-        choices: ["MIT", "GVL-GPL 3.0","APACHE 2.0","BSD 3","NONE"]
+        choices: ["MIT", "APACHE", "GPL", "BSD", "None"]
     },
     {
         type:    "input",

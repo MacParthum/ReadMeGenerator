@@ -1,15 +1,16 @@
-# Readme Generator
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+    
+ x
 
- 
-    ## Description
+  ## Description
 
-    lorem ipsum dolor whatever whatever
+    x
     
    ## Table of Contents
 
    *[Installation](#Installation)
    *[Usage](#Usage)
-   *[Licence](#Licence)
+   *[License](#License)
    *[Contributors](#Contributors)
    *[Tests](#Tests)
    *[Questions](#Questions)
@@ -17,27 +18,28 @@
 
     ## Installation
 
-    lorem ipsum dolor whatever whatever
+    x
 
     ## Usage
 
-    type node index.js
+    x
 
-    ## Licence
+    ## License
 
-    undefined
+    MIT
+    
 
     ## Contributors
 
-    nothing
+    x
 
     ## Tests
 
-    node index.js
+    x
 
 
  ## Questions
-    Please contact me at macparthum@gmail.com if you have any questions.
+    Please contact me at x if you have any questions.
 
     Please visit my github account [undefined](https://github.com/undefined/)
     
